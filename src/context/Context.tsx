@@ -32,7 +32,6 @@ export const Context = ({children}: {children: JSX.Element}) => {
     nextId.current++;
     setInput("");
   }
-  console.log(item.unshift())
   const value = {handleInput, sendInput, input, item, setItem};
   return (
     <AppC.Provider value={value}>
