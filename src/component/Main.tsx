@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { AppC } from "../context/Context"
 import Item from "./item/Item";
+import '../style/main.scss'
 
 function Main() {
   const {handleInput, sendInput, input, item} = useContext(AppC);
@@ -13,14 +14,14 @@ function Main() {
       <div>
         <ul>
         {
-          item && item.map(obj => {
-            return <Item 
+          item && item.slice(0).reverse().map(obj => 
+            <Item 
             key={obj.idx}
             idx = {obj.idx}
             detail = {obj.detail}
             completed = {obj.completed}
             />
-          })
+          )
         }
         </ul>
       </div>
