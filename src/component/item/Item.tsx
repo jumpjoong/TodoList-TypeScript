@@ -18,7 +18,6 @@ function Item({detail, idx, completed}: Input) {
   }
   //수정창 텍스트 변경
   const fixChange = (idx: number, e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.onkeydown)
     setItem(prevItem => prevItem.map(item => 
         item.idx === idx ? {...item, detail: e.target.value} : item
     ));
