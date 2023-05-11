@@ -15,23 +15,36 @@
       font-size: 3rem;
     }
   }
-  ul {
-    li {
+  div {
+    width: 100%;
+    > table {
       max-width: 700px;
       width: 100%;
       margin: 0 auto;
-      display: flex;
-      align-items: center;
-      p {
-        overflow: hidden;
-        width: 70%;
-        font-size: 3rem;
-        margin-right: 2rem;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+      > thead {
+        text-align: center;
+        > tr {
+          > td {
+            width: 30%;
+          }
+        }
       }
-      img {
-        cursor: pointer;
+      > tbody {
+        text-align: center;
+        > tr {
+          > td {
+            text-align: center;
+            &:nth-of-type(2) {
+              p {
+                text-align: left;
+              }
+            }
+            > p {
+              display: inline-block;
+              width: 100%;
+            }
+          }
+        }
       }
     }
   }

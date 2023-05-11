@@ -12,18 +12,27 @@ function Main() {
         <input placeholder='오늘의 할 일' type="text"onChange={handleInput} value={input}/>
       </form>
       <div>
-        <ul>
-        {
-          item && item.slice(0).reverse().map(obj => 
-            <Item 
-            key={obj.idx}
-            idx = {obj.idx}
-            detail = {obj.detail}
-            completed = {obj.completed}
-            />
-          )
-        }
-        </ul>
+        <table>
+          <thead>
+            <tr>
+              <td>게시글 번호</td>
+              <td>제목</td>
+              <td>수정 및 삭제</td>
+            </tr>
+          </thead>
+          <tbody>
+              {
+                item && item.slice(0).reverse().map(obj => 
+                  <Item 
+                  key={obj.idx}
+                  idx = {obj.idx}
+                  detail = {obj.detail}
+                  completed = {obj.completed}
+                  />
+                )
+              }
+          </tbody>
+        </table>
       </div>
     </div>
   )
