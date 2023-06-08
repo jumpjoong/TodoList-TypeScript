@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TodoList-TypeScript/static/css/main.ff197e47.css",
+    "main.js": "/TodoList-TypeScript/static/js/main.d7bb8dad.js",
+    "static/js/787.3ef76c54.chunk.js": "/TodoList-TypeScript/static/js/787.3ef76c54.chunk.js",
+    "index.html": "/TodoList-TypeScript/index.html",
+    "main.ff197e47.css.map": "/TodoList-TypeScript/static/css/main.ff197e47.css.map",
+    "main.d7bb8dad.js.map": "/TodoList-TypeScript/static/js/main.d7bb8dad.js.map",
+    "787.3ef76c54.chunk.js.map": "/TodoList-TypeScript/static/js/787.3ef76c54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff197e47.css",
+    "static/js/main.d7bb8dad.js"
+  ]
+}
