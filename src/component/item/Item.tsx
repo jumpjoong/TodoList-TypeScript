@@ -45,8 +45,8 @@ function Item({detail, idx, completed}: Input) {
         </> 
       }
       <td>
-      <img src="./img/edit.svg" alt="수정" onClick={()=>fixInput(data.idx)}/>
-      <img src="./img/delete.svg" alt="삭제" onClick={()=>deleteItem(data.idx)}/>
+      <img src={`${process.env.PUBLIC_URL}/img/edit.svg`} alt="수정" onClick={()=>fixInput(data.idx)}/>
+      <img src={`${process.env.PUBLIC_URL}/img/delete.svg`} alt="삭제" onClick={()=>deleteItem(data.idx)}/>
       </td>
     </tr>
   )
